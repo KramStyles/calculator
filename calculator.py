@@ -64,6 +64,7 @@ class Calculator(QWidget):
                     if number == '.':
                         if not number in value:
                             value += str(number)
+                            # Todo: Fix decimal error
                             self.lblInput.setText("{:,}".format(int(value)))
                     else:
                         value += str(number)
